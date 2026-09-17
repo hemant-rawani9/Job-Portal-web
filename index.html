@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobPortal</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <div class="loader-track">
+        <div class="loader-bar"></div>
+      </div>
+      <p>Preparing your hiring experience...</p>
+    </div>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#">JobPortal</a>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="topnav" aria-label="Primary navigation">
+          <a href="#platform">Platform</a>
+          <a href="#jobs">Jobs</a>
+          <a href="#stats">Stats</a>
+          <a href="#faq">FAQ</a>
+          <a class="button button-secondary mobile-cta" href="#join">Get started</a>
+        </nav>
+        <a class="button button-secondary desktop-cta" href="#join">Get started</a>
+      </header>
+
+      <main>
+        <section class="hero" id="platform">
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-panel">
+              <img
+                class="hero-image"
+                src="https://www.telilabs.com/lowermanhattan.png"
+                alt="Startup hiring experience illustration"
+              />
+              <div class="hero-overlay"></div>
+
+              <div class="hero-copy">
+                <!-- <span class="eyebrow">The startup job hub for young talent</span> -->
+                <h1>The startup job hub for young talent</h1>
+                <p>
+                  Match with early-stage startups, browse live opportunities, and stay ahead with curated hiring insights built for ambitious builders.
+                </p>
+
+                <div class="hero-actions">
+                  <a class="button button-primary" href="#join">Join now</a>
+                  <a class="button button-ghost" href="#jobs">Explore jobs</a>
+                </div>
+
+                <div class="hero-badges" id="about">
+                  <span>10K+ live jobs</span>
+                  <span>AI matching</span>
+                  <span>Trusted by founders</span>
+                </div>
+              </div>
+
+              <div class="orb orb-one"></div>
+              <div class="orb orb-two"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="featured-jobs" id="jobs">
+          <div id="jobs-list" class="featured-content" aria-live="polite"></div>
+        </section>
+
+        <section class="trusted-companies" id="trusted">
+          <div id="companies-list" class="companies-marquee" aria-live="polite"></div>
+        </section>
+
+        <section class="statistics-section" id="stats">
+          <div class="section-heading">
+            <span class="eyebrow">Performance at a glance</span>
+            <h2>Trusted by ambitious teams worldwide.</h2>
+          </div>
+          <div id="stats-list" class="stats-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+          <div class="section-heading">
+            <span class="eyebrow">What leaders say</span>
+            <h2>Recruitment that feels effortless.</h2>
+          </div>
+          <div id="testimonials-list" class="testimonials-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="faq-section" id="faq">
+          <div class="section-heading">
+            <span class="eyebrow">Frequently asked</span>
+            <h2>Everything you need to know.</h2>
+          </div>
+          <div id="faq-list" class="faq-list" aria-live="polite"></div>
+        </section>
+
+        <section class="newsletter-section" id="newsletter">
+          <div class="newsletter-card">
+            <div>
+              <span class="eyebrow">Stay ahead</span>
+              <h2>Receive curated opportunities every week.</h2>
+              <p>Join the newsletter and get premium hiring insights directly in your inbox.</p>
+            </div>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit" class="button button-primary">Subscribe</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="#">JobPortal</a>
+            <p>Modern hiring for startups, scale-ups, and ambitious teams.</p>
+            <div class="social-links">
+              <a href="#">X</a>
+              <a href="#">in</a>
+              <a href="#">GH</a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3>Quick links</h3>
+            <ul>
+              <li><a href="#platform">Platform</a></li>
+              <li><a href="#jobs">Featured Jobs</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Job categories</h3>
+            <ul id="footer-categories"></ul>
+          </div>
+          <div class="footer-links">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="mailto:hello@jobportal.com">hello@jobportal.com</a></li>
+              <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+              <li>Remote-first · Global</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 JobPortal. All rights reserved.</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
